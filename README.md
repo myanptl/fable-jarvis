@@ -1,8 +1,8 @@
-# ◈ hey-jarvis
+# ◈ fable-jarvis
 
 > Your own JARVIS in the terminal — a Claude-powered personal assistant with memory, daily briefings, and a personality.
 
-[![npm](https://img.shields.io/npm/v/hey-jarvis)](https://www.npmjs.com/package/hey-jarvis)
+[![npm](https://img.shields.io/npm/v/fable-jarvis)](https://www.npmjs.com/package/fable-jarvis)
 [![license](https://img.shields.io/badge/license-MIT-gold)](LICENSE)
 [![node](https://img.shields.io/badge/node-%3E%3D18-brightgreen)](package.json)
 
@@ -30,12 +30,12 @@ A few quick commits before lunch and tomorrow's you will be grateful.
 ## Install
 
 ```bash
-npm install -g hey-jarvis
+npm install -g fable-jarvis
 jarvis init        # 30 seconds: your name, city, projects folder
 jarvis             # at your service
 ```
 
-**Auth:** Jarvis talks to Claude through the [Claude Agent SDK](https://docs.claude.com/en/api/agent-sdk/overview). If you have [Claude Code](https://claude.com/claude-code) installed and logged in, it just works — your existing subscription is used. Otherwise set `ANTHROPIC_API_KEY`. hey-jarvis never stores or reads your key.
+**Auth:** Jarvis talks to Claude through the [Claude Agent SDK](https://docs.claude.com/en/api/agent-sdk/overview). If you have [Claude Code](https://claude.com/claude-code) installed and logged in, it just works — your existing subscription is used. Otherwise set `ANTHROPIC_API_KEY`. fable-jarvis never stores or reads your key.
 
 ## Commands
 
@@ -80,8 +80,8 @@ The daily briefing inverts the flow: collectors gather your data locally in para
 ## Development
 
 ```bash
-git clone https://github.com/myanptl/hey-jarvis.git
-cd hey-jarvis
+git clone https://github.com/myanptl/fable-jarvis.git
+cd fable-jarvis
 npm install
 npm run build && npm test   # 18 tests
 node dist/cli.js brief --raw

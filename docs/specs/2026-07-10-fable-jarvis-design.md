@@ -1,4 +1,4 @@
-# hey-jarvis — Design Spec
+# fable-jarvis — Design Spec
 
 **Date:** 2026-07-10
 **Status:** Approved
@@ -6,7 +6,7 @@
 ## What it is
 
 An open-source terminal AI assistant powered by Claude via the Claude Agent SDK.
-Anyone can install it from npm (`npm i -g hey-jarvis`), run `jarvis`, and get a
+Anyone can install it from npm (`npm i -g fable-jarvis`), run `jarvis`, and get a
 personal assistant with a JARVIS personality that knows their projects, remembers
 what they tell it, and gives them a daily briefing.
 
@@ -32,7 +32,7 @@ Read-only and safe by default:
 ## Auth
 
 The Agent SDK uses the user's existing Claude Code login when available, or
-`ANTHROPIC_API_KEY`. No key is ever stored by hey-jarvis. Friendly error message
+`ANTHROPIC_API_KEY`. No key is ever stored by fable-jarvis. Friendly error message
 with both options if neither is present.
 
 ## Architecture
@@ -72,5 +72,5 @@ Vitest unit tests for config, memory, git collector (temp dirs), weather
 
 ## Distribution
 
-- npm package `hey-jarvis`, bin `jarvis`, Node >= 18, MIT license.
-- GitHub `myanptl/hey-jarvis` with README (install, demo GIF placeholder, features, privacy note).
+- npm package `fable-jarvis`, bin `jarvis`, Node >= 18, MIT license.
+- GitHub `myanptl/fable-jarvis` with README (install, demo GIF placeholder, features, privacy note).

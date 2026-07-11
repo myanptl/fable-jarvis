@@ -11,7 +11,7 @@ const require = createRequire(import.meta.url);
 const { version } = require("../package.json") as { version: string };
 
 const HELP = `
-${gold(bold("◈ hey-jarvis"))} ${dim(`v${version}`)} — your own JARVIS in the terminal
+${gold(bold("◈ fable-jarvis"))} ${dim(`v${version}`)} — your own JARVIS in the terminal
 
 ${bold("Usage")}
   jarvis                      start a live chat session
