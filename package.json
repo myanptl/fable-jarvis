@@ -1,0 +1,54 @@
+{
+  "name": "hey-jarvis",
+  "version": "1.0.0",
+  "description": "Your own JARVIS in the terminal — a Claude-powered personal assistant with memory, daily briefings, and a personality.",
+  "type": "module",
+  "bin": {
+    "jarvis": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "jarvis",
+    "ai",
+    "assistant",
+    "terminal",
+    "cli",
+    "claude",
+    "anthropic",
+    "agent",
+    "daily-briefing",
+    "productivity"
+  ],
+  "author": "Myan Patel (https://github.com/myanptl)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myanptl/hey-jarvis.git"
+  },
+  "homepage": "https://github.com/myanptl/hey-jarvis#readme",
+  "bugs": {
+    "url": "https://github.com/myanptl/hey-jarvis/issues"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.3.206",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0",
+    "vitest": "^4.1.10"
+  }
+}
